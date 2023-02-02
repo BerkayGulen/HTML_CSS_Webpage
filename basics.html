@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay_Gülen_Homework1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img class="html-icon" src="assets/html_logo.png" alt="">
+        <div id="box">
+            <p id="flashlight">
+                <span id="flash">HTML/</span>
+                <span id="light">CSS</span>
+            </p>
+        </div>
+        <a href="https://www.ieu.edu.tr/en">
+            <img class="ieu-icon" src="assets/ieu_logo.png" alt="">
+        </a>
+    </header>
+    <section>
+        <nav class="sidebar">
+            <a href="index.html">
+                <img class="html-css-icon" src="assets/html_icon.png" alt="">
+            </a>
+            <h1>HTML TAGS</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"><span>Home</span></i></a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a class="active" href="basics.html">HTML Basics</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+                <li><a href="text_formatting_elements.html">Text Formating Elements</a></li>
+                <li><a href="block_and_inline_elements.html">Block and Inline Elements</a></li>
+                <li><a href="layout_.html">Layout</a></li>
+
+            </ul>
+        </nav>
+        <article>
+            <div class="content">
+                <h1>HTML Basics</h1>
+                <div class="nav-buttons">
+                    <a class="left-btn" href="introduction.html">❮ Previous</a>
+                    <a class="right-btn" href="attributes.html">Next ❯ </a>
+                </div>
+
+                <hr>
+
+                <h2>HTML Documents</h2>
+                <p>All HTML documents must start with a document type declaration: <code
+                        class="codespan">&lt;!DOCTYPE html&gt;</code>.</p>
+                <p>The HTML document itself begins with <code class="codespan">&lt;html&gt;</code> and ends with
+                    <code class="codespan">&lt;/html&gt;</code>.
+                </p>
+                <p>The visible part of the HTML document is between <code class="codespan">&lt;body&gt;</code> and
+                    <code class="codespan">&lt;/body&gt;</code>.
+                </p>
+
+                <hr>
+
+                <h2>HTML Headings</h2>
+                <p>HTML headings are defined with the <code class="codespan">&lt;h1&gt;</code> to <code
+                        class="codespan">&lt;h6&gt;</code> tags.</p>
+                <p><code class="codespan">&lt;h1&gt;</code> defines the most important heading. <code
+                        class="codespan">&lt;h6&gt;</code> defines the least important
+                    heading:&nbsp;
+                </p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-content">
+                        <p><code>&lt;h1&gt;This is heading 1&lt;/p&gt;</code></p>
+                        <p><code>&lt;h2&gt;This is heading 2&lt;/p&gt;</code></p>
+                        <p><code>&lt;h3&gt;This is heading 3&lt;/p&gt;</code></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>HTML Paragraphs</h2>
+                <p>HTML paragraphs are defined with the <code class="codespan">&lt;p&gt;</code> tag:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-content">
+                        <p><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+                        <p><code>&lt;p&gt;This is a paragraph 2.&lt;/p&gt;</code></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>HTML Links</h2>
+                <p>HTML links are defined with the <code class="codespan">&lt;a&gt;</code> tag:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-content">
+                        <p><code>&lt;a&gt; href=<span style="color: blue;">"https://www.google.com.tr"</span>&lt;/a&gt;</code>
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>HTML Images</h2>
+                <p>HTML images are defined with the <code class="codespan">&lt;img&gt;</code> tag.</p>
+                <p>The source file (<code class="w3-codespan">src</code>), alternative text (<code
+                        class="w3-codespan">alt</code>),
+                    <code class="codespan">width</code>, and <code class="codespan">height</code> are provided as
+                    attributes:
+                </p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-content">
+                        <p><code>&lt;img&gt; src="/assets/pirate_ship.jpg" width="100" height="100"&lt;/img&gt;</code>
+                        </p>
+                        <img src="assets/pirate_ship.jpg" alt="pirate_ship" width="100" height="100">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </article>
+    </section>
+    <footer>
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.3370036510264!2d27.04144551579342!3d38.38745627965256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdc5ad6090d21%3A0x516a7ede49a31cb3!2sT.%20C.%20%C4%B0zmir%20Ekonomi%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1638033866590!5m2!1str!2str"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1><b>Contact Me</b></h1>
+
+                <form>
+                    <input class="contact-form-txt" type="text" name="" id="" placeholder="Name">
+                    <input class="contact-form-txt" type="text" name="" id="" placeholder="Email">
+                    <textarea class="contact-form-txtarea" placeholder="Message"></textarea>
+                    <input class="contact-form-btn" type="submit" name="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

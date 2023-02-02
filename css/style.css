@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+hr{
+    margin: 20px -16px;
+}
+
+.codespan{
+    color: crimson;
+    background-color: rgba(222, 222, 222, 0.3);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+body{
+    height: 100vh;
+}
+
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), rgba(83, 78, 78, 0.377));
+    justify-content: space-between;
+    
+}
+
+.html-icon{
+    height: 90px;
+    width: 100px;
+    margin-left: 87px;
+}
+.html-css-icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.ieu-icon{
+    height: 100px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+section{
+    display: flex;
+}
+
+section nav{
+    flex: 0.5;
+    background-color: #e7e9eb;
+}
+
+
+section nav h1{
+    text-align: center;
+    margin: 20px; 
+    font-size: 35px;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+
+section nav ul li a{
+    display:  block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+section nav ul li a:hover{
+    border-left: 5px solid #04AA6D;
+ 
+}
+
+a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+section article{
+    flex: 3;
+    background-color: white;
+    display: table;
+    height: 100vh;
+}
+
+article .content{
+    padding: 30px 32px 32px 50px;
+}
+
+/* BUTTONS */
+.nav-buttons{
+    display: table;
+    clear: both;
+    font-size: 20px;
+}
+.left-btn{
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: white;
+    display: inline-block;
+    padding: 8px 19px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #04AA6D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+
+}
+.left-btn:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.right-btn{
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: white;
+    display: inline-block;
+    padding: 8px 19px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    background-color: #04AA6D;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.right-btn:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* NOTE IN INTRO PAGE */
+.note-class{
+    width: 1200px;
+    margin: 24px -32px 24px -32px;
+    padding: 16px 32px;
+    border-left: none;
+    background-color: #ffffcc;
+}
+
+/* ATTRIBUTES PAGE */ 
+
+.example{
+    padding: 10px 20px 30px 20px;
+    margin: 24px -20px;
+    border-radius: 5px;
+    background-color: #e7e9eb;
+}
+
+.example-content{
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #04AA6D;
+    word-wrap: break-word;
+}
+/* footer part - contact part */
+footer{
+    width: 100%;
+    display: grid;
+    height: 400px;
+    align-items: center;
+}
+
+.contact-in{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    flex: 50%;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-bottom: 10px;
+}
+
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-txt::placeholder{
+    color: #aaa;
+}
+
+
+.contact-form-txtarea{
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-txtarea::placeholder{
+    color: #aaa;
+}
+
+.contact-form-btn{
+    width: 95%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.contact-form-btn:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* text formatting elements part */
+
+.text-formatting-elements-table{
+    margin: 20px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    display: table;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px 0px #666;
+
+}
+
+td{
+    text-align: center;
+    border: solid 1px #ccc;
+    box-shadow: 0px 0px 4px 0px #666;
+}
+
+/*Home Page*/
+
+
+.history-html{
+    width: 100%;
+    height: 500px;
+    color: #000;
+    border: 1.5px solid #04AA6D;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.history-html h3{
+    text-align: center;
+    font-weight:600 ;
+    color:#04AA6D ;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.history-html ul {
+    list-style: none; /* Remove default bullets */
+  }
+  .history-html ul li::before {
+    padding-left: 15px;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #04AA6D; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .history-css{
+    width: 100%;
+    height: 500px;
+    color: #000;
+    border: 1.5px solid #04AA6D;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+
+  .history-css h3{
+    text-align: center;
+    font-weight:600 ;
+    color:#04AA6D ;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.history-css ul {
+    list-style: none; /* Remove default bullets */
+  }
+  .history-css ul li::before {
+    padding-left: 15px;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #04AA6D; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  
+  /* FLASHLIGHT EFFECT */
+  
+  #box {
+    padding: 100px;
+    text-align: center;
+    min-width: 500px;
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden; /* fixes flashing */
+  }
+  
+  
+  #flashlight {
+    color: hsla(0,0%,0%,0);
+    perspective: 80px;
+    outline: none;
+  }
+  
+  
+  #flash {
+    display: inline-block;
+    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+    transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+  }
+      
+  #box:hover #flash {
+    margin-left: 20px;
+    transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
+  }
+  
+  
+  #light {
+    display: inline-block;
+    text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
+  }
+  
+  #box:hover #light {
+    text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+    transform: rotateY(-60deg);
+    transition:         transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+  }
